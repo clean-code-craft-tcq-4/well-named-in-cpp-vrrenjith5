@@ -5,10 +5,12 @@ using namespace std;
 
 int main() {
 
-  testNumberToPair(4, WHITE, BROWN);
-  testNumberToPair(5, WHITE, SLATE);
-  testPairToNumber(BLACK, ORANGE, 12);
-  testPairToNumber(VIOLET, SLATE, 25);
+  ColorPairTest colorPairTest;
+
+  colorPairTest.testNumberToPair(4, WHITE, BROWN);
+  colorPairTest.testNumberToPair(5, WHITE, SLATE);
+  colorPairTest.testPairToNumber(BLACK, ORANGE, 12);
+  colorPairTest.testPairToNumber(VIOLET, SLATE, 25);
 
   return 0;
 }

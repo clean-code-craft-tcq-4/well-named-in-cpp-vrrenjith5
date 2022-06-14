@@ -3,13 +3,18 @@
 
 #include "telecom_color_code.h"
 
-void testNumberToPair(int pairNumber,
-    MajorColor expectedMajor,
-    MinorColor expectedMinor);
+class ColorPairTest{
 
-void testPairToNumber(
-    MajorColor major,
-    MinorColor minor,
-    int expectedPairNumber);
+public:
+  void testNumberToPair(int pairNumber,
+  MajorColor expectedMajor,
+  MinorColor expectedMinor);
+
+  void testPairToNumber(
+  MajorColor major,
+  MinorColor minor,
+  int expectedPairNumber);
+
+};
 
 #endif /*__TELECOM_COLOR_CODE_TEST_H_*/

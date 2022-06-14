@@ -1,7 +1,7 @@
 #include <assert.h>
 #include "telecom_color_code_test.h"
 
-void testNumberToPair(int pairNumber,
+void ColorPairTest :: testNumberToPair(int pairNumber,
     MajorColor expectedMajor,
     MinorColor expectedMinor)
 {
@@ -12,7 +12,7 @@ void testNumberToPair(int pairNumber,
     assert(colorPair.getMinor() == expectedMinor);
 }
 
-void testPairToNumber(
+void ColorPairTest :: testPairToNumber(
     MajorColor major,
     MinorColor minor,
     int expectedPairNumber)
