@@ -15,18 +15,33 @@ int numberOfMinorColors =
   sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 
 MajorColor ColorPair :: getMajorColor() {
-  return majorColor;
+  return _majorColor;
 }
 
 MinorColor ColorPair :: getMinorColor() {
-  return minorColor;
+  return _minorColor;
 }
 
 std::string ColorPair :: toString() {
-  std::string colorPairStr = MajorColorNames[majorColor];
+  std::string colorPairStr = MajorColorNames[_majorColor];
   colorPairStr += " ";
-  colorPairStr += MinorColorNames[minorColor];
+  colorPairStr += MinorColorNames[_minorColor];
   return colorPairStr;
+}
+
+void ColorPair :: printColorCodeManual() {
+    std::string colorPairString = "";
+    int counter = 0;
+    for(int i =0; i < numberOfMajorColors; i++) {
+      for(int j= 0; j < numberOfMinorColors;j++) {
+        counter++;
+        colorPairString = MajorColorNames[i];
+        colorPairString += "/";
+        colorPairString += MinorColorNames[j];
+        std::cout << "Major/Minor Color, Number is: "
+                  << colorPairString << ", " <<counter<< std::endl;
+      }
+    }
 }
 
 ColorPair getColorFromPairNumber(int pairNumber) {

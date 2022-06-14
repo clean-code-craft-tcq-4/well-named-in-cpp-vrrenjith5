@@ -6,14 +6,15 @@
 
 class ColorPair {
   private:
-    MajorColor majorColor;
-    MinorColor minorColor;
+    MajorColor _majorColor;
+    MinorColor _minorColor;
   public:
     ColorPair(MajorColor major, MinorColor minor):
-    majorColor(major), minorColor(minor){}
+    _majorColor(major), _minorColor(minor){}
     MajorColor getMajorColor();
     MinorColor getMinorColor();
     std::string toString();
+    void printColorCodeManual();
 };
 
 ColorPair getColorFromPairNumber(int pairNumber);
