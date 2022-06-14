@@ -6,14 +6,14 @@
 class ColorPairTest{
 
 public:
-  void testNumberToPair(int pairNumber,
-  MajorColor expectedMajor,
-  MinorColor expectedMinor);
+  void numberToPair(int pairNumber,
+    MajorColor expectedMajor,
+    MinorColor expectedMinor);
 
-  void testPairToNumber(
-  MajorColor major,
-  MinorColor minor,
-  int expectedPairNumber);
+  void pairToNumber(
+    MajorColor major,
+    MinorColor minor,
+    int expectedPairNumber);
 
 };
 
